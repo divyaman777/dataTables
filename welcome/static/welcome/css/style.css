@@ -1,0 +1,11 @@
+.topNav {
+    background-color: chartreuse;
+    
+}
+
+nav a.navTag {
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
