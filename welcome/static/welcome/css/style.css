@@ -1,5 +1,9 @@
+body.welcome {
+    background-color: beige;
+}
+
 .topNav {
-    background-color: chartreuse;
+    background-color: #ff6666;
     
 }
 
@@ -8,4 +12,68 @@ nav a.navTag {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
+}
+.welcomeCard {
+    margin: 15px 100px 15px 100px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .30rem;
+    background: linear-gradient(salmon,darkgrey);
+    color: white;
+    text-align: center;
+ 
+    
+}
+
+.welcomeLS {
+    margin: 10px;
+}
+
+
+.cardLogin {
+    color: black;
+}
+.cardSignup {
+    color: black;
+}
+
+.welcomeJumbo {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.welcomeJumbotext {
+    font-size: 60px;
+    font-weight: 500px;
+    text-shadow: 2px 2px 8px black;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px; 
+    background-color: orange;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 4px rgba(0,0,0,.2);
+
+}
+
+
+@media screen and (max-width: 680px) {
+    
+ div.box {
+        padding: 5px;
+        display: block;   
+    }
+    
+    
+}
+
+.footsy {
+    background-color: #ff6666;
 }

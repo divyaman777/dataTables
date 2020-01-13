@@ -13,16 +13,103 @@
         
     </head>
     
-    <body>
+    <body class="welcome">
         
         <!-- Image and text -->
         <nav class="navbar navbar-light topNav">
           <a class="navTag" href="#">
             <img src="{% static 'welcome/assets/bootstrap_logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
             dataTables
-          </a>
+          </a> 
         </nav>
+        <div class="card welcomeCard">
+          <div class="card-body">
+            Welcome to Data Table <br>An online Database site...!!
+          </div>
+          <div class="row welcomeLS">
+              <div class="col-sm-6">
+                <div class="card cardLogin">
+                  <div class="card-body">
+                    <h5 class="card-title">Welcome New User!!</h5>
+                    <p class="card-text">Create an Account and make your first lite online data base.</p>
+                    <a href="#" class="btn btn-warning">Sign Up</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body cardSignup">
+                    <h5 class="card-title">Welcome Back!!</h5>
+                    <p class="card-text">Login and manage your data and clients and track data usability.</p>
+                    <a href="#" class="btn btn-success">Log In</a>
+                  </div>
+                </div>
+              </div>
+            </div>    
+        </div>
+        <div class="jumbotron jumbotron-fluid welcomeJumbo">
+            <div class="container">
+                <h1 class="display-4 welcomeJumbotext">The Standards of Awesomeness</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="icon.png">
+                        </div>
+                        <label>Chat With Me</label>
+                        <p>This is nothing this only a way to increase the text field more and more only but it in not a good apporach .</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="icon.png">
+                        </div>
+                        <label>Chat With Me</label>
+                        <p>This is nothing this only a way to increase the text field more and more only but it in not a good apporach .</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="icon.png">
+                        </div>
+                        <label>Chat With Me</label>
+                            <p>This is nothing this only a way to increase the text field more and more only but it in not a good apporach .</p>
+                        </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+        <div class="footsy">
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    
+                </div>
+            </div>
         
+        </div>
+        
+        </div>
+        <!--
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Log In</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-warning btn-lg btn-block">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="{% static 'welcome/js/bootstrap.min.js' %}"></script>
