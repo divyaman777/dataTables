@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static 'welcome/assets/bootstrap_logo.png' %}" type="image/gif" sizes="16x16">
+        <!-- Bootstrap CSS -->
+        
+        <link rel="stylesheet" href="{% static 'login/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'login/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
+        <title>LOG IN</title>
+        
+    </head>
+    
+    
+    <body class="login">
+        
+        <nav class="navbar navbar-light topNav">
+          <a class="navTag" href="#">
+            <img src="{% static 'welcome/assets/bootstrap_logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+            dataTables
+          </a> 
+        </nav>
+        
+        <div class="container login-container">
+            <div class="row">
+                <div class="col">
+                
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="card login-card">
+                      <div class="card-body">
+                        <img class="img-fluid signinImg" src="{% static 'login/assets/bootstrap_logo.png' %}">
+                        
+                        <form class="loginForm">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="emailInput" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                          </div>
+                          <button type="button" class="btn loginBtn btn-lg">Log In</button>
+                          <div class="form-check">
+                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                 Remember Me! <a href="#"> Need Help? </a>
+                            </label>
+                            </div>
+                        </form>
+                          
+                      </div>
+                    </div>
+                    <a href="#" class="newAcc">Create New Account!!</a>
+                    <a href="#" class="forgotPass">Forgot Password!</a>
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="{% static 'welcome/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
