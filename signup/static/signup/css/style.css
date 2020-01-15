@@ -1,0 +1,61 @@
+
+body.login {
+    background-color: beige;
+}
+
+.topNav {
+    background-color: #ff6666;
+    
+}
+
+nav a.navTag {
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container.login-container {
+    margin-top: 6%;
+}
+
+.card.login-card {
+    padding: 40px 0px 20px;
+    background-color: snow;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+img.signinImg {
+    padding: 0 2rem 2rem;
+    margin: auto;
+    height: 150px;
+    display: block;
+}
+
+form.loginForm {
+    max-width: 350px;
+    margin: auto;
+}
+button.loginBtn {
+    color: azure;
+    background-color: dodgerblue;
+    width: 100%;
+    margin-bottom: 0.8rem;
+
+}
+
+a.newAcc {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+}
+
+a.forgotPass {
+    font-size: 1.2rem;
+    color: red;
+    text-align: center;
+    display: block;
+}
