@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'welcome.apps.WelcomeConfig',
     'login.apps.LoginConfig',
     'signup.apps.SignupConfig',
+    'dashboard.apps.DashboardConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

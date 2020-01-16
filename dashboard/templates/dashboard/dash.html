@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static 'welcome/assets/bootstrap_logo.png' %}" type="image/gif" sizes="16x16">
+        <!-- Bootstrap CSS -->
+        
+        <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'dashboard/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'dashboard/css/dash_style.css' %}">
+        
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'dashboard/assets/bootstrap_logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+          dataTables</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documentation</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% if user.is_authenticated %}
+                    <label class="dropdown-item">Welcome, {{user.first_name}}</label>
+                    <div class="dropdown-divider"></div>
+                    {% endif %}
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                </div>
+              </li>
+            </ul>
+              <button class="btn btn-success my-2 my-sm-0" onclick="location.href='/dashboard/logout'">Log Out</button>
+          </div>
+        </nav>        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="{% static 'dashboard/js/bootstrap.min.js' %}"></script>
+
+    </body>
+</html>

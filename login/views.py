@@ -7,9 +7,11 @@ def login(request):
 		user_name = request.POST['user_name']
 		password = request.POST['password']
 		user = auth.authenticate(username=user_name, password=password)
-		print(user_name)
+		print(user)
+		##print(user_name)
 		if user is not None :
-			return (redirect('/'))
+			auth.login(request, user)
+			return (redirect('/dashboard'))
 		else:
 			messages.info(request,'invalid credentials')
 			return (redirect('/login'))
